@@ -4,4 +4,5 @@ numpydoc==0.8.0
 pandas==0.23.4
 pandas-datareader==0.8.1
 pandocfilters==1.4.2
-
+xlrd==1.2.0
+XlsxWriter==1.1.2
