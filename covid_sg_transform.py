@@ -11,8 +11,6 @@ from bokeh.models import HoverTool, SingleIntervalTicker, Slider, Button, Label,
 from bokeh.palettes import Spectral6
 import numpy as np
 import pandas as pd
-import bokeh.sampledata
-from bokeh.sampledata.gapminder import fertility, life_expectancy, population, regions
 
 df = pd.read_excel('covid_sg_transform.xlsx')
 days = df['Days Since 22 Jan 2020'].tolist()
