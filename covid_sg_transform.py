@@ -1,14 +1,10 @@
 # run in commandline using: bokeh serve --show covid_sg_transform.py
-
-from bokeh.server.server import Server
+import bokeh
 from bokeh.io import curdoc
 from bokeh.layouts import layout, column, row
-from bokeh.application import Application
-from bokeh.application.handlers.function import FunctionHandler
 from bokeh.plotting import figure, ColumnDataSource, show, output_file, show
 from bokeh.core.properties import field
 from bokeh.models import HoverTool, SingleIntervalTicker, Slider, Button, Label, CategoricalColorMapper
-from bokeh.palettes import Spectral6
 import numpy as np
 import pandas as pd
 
@@ -92,5 +88,4 @@ layout = row(column(plot, slider, button))
 
 curdoc().title = "Covid-19 SG Trajectories"
 curdoc().add_root(layout)
-
 #show(layout)
