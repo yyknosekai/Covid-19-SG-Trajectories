@@ -1,4 +1,4 @@
-# run in commandline using: bokeh serve --show app.py
+# run in commandline using: bokeh serve --show covid_sg_transform.py
 
 from bokeh.server.server import Server
 from bokeh.io import curdoc
@@ -92,7 +92,7 @@ button.on_click(animate)
 
 layout = row(column(plot, slider, button))
 
-curdoc().add_root(layout)
 curdoc().title = "Covid-19 SG Trajectories"
-output_file("covidsg.html", title="Covid-19 SG Trajectories")
-show(layout)
+curdoc().add_root(layout)
+
+#show(layout)
